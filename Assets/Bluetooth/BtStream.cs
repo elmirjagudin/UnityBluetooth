@@ -27,7 +27,10 @@ public class BtStream : System.IO.Stream
 
     override public void Flush()
     {
-        throw new NotImplementedException();
+        /*
+         * we don't do any buffering, so
+         * nothing to do here
+         */
     }
 
     override public int Read(byte[] buffer, int offset, int count)

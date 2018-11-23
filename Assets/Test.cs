@@ -79,6 +79,7 @@ public class Test : MonoBehaviour
             Log("reader {0} writer {1}", reader, writer);
 
             writer.Write("em,/cur/term,/msg/nmea/GGA:.05\n\r");
+            writer.Flush();
 
             Log("wrote");
         }
