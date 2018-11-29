@@ -17,6 +17,11 @@ public class BluetoothSocket
         JavaObject.Call("connect");
     }
 
+    public void close()
+    {
+        JavaObject.Call("close");
+    }
+
     public BtStream getInputStream()
     {
         var istream = JavaObject.Call<AndroidJavaObject>("getInputStream");
